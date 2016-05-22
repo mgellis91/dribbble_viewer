@@ -1,0 +1,19 @@
+<div class="text-intro">
+
+    <h1>SHOTS</h1>
+    <p>these are recent shots and that. You seeing these? these are coming straight from dribbble. Not here. Mother f***in Dribbble</p>
+</div>
+
+<ul class="portfolio-grid">
+    
+    <li class="grid-item" ng-repeat="shot in list.data" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+      <img ng-src="{{shot.images.teaser}}">
+        <a class="ajax-link" href="#/shots/{{shot.id}}">  
+          <div class="grid-hover">
+            <h1>{{shot.title}}</h1>
+            <p>by {{shot.user.username}}</p>
+          </div>
+        </a>  
+    </li>
+
+  </ul>

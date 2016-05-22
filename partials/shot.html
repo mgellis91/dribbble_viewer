@@ -1,0 +1,29 @@
+<div class="text-intro">
+
+  <h1>{{shot.data.title}}</h1>
+  
+            
+    <div class="one-column">
+      <p>By {{shot.data.user.username}}</p>
+      <p>Created on {{shot.data.created_at | date:"MMM d, yyyy" }}</p>
+      <p>{{shot.data.likes_count}} likes</p>
+      <p>{{shot.data.views_count}} views</p>
+      <p>{{shot.data.rebounds_count}} rebounds</p>
+    </div>
+
+
+      <div ng-bind-html-unsafe="shot.data.description" class="two-column">
+        {{shot.data.description}}
+      </div>   
+                  
+        <div class="clear"></div>   				                                  
+        
+        <img ng-src="{{shot.data.images.hidpi}}" width="100%"><br/><br/><br/><br/>				        
+
+
+          <div class="prev-next">
+          
+            <div class="prev-button"><a class="ajax-link" href="#/">Back to shots</a></div>										
+          </div>
+    </div>
+
