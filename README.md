@@ -15,4 +15,4 @@ In order to use the dribbble api you will need to register an application at htt
 This application uses the v1 version of the dribbble api
 
 # Live preview
-see a live preview of the application at http://www.matt-ellis.com/dribbble_viewer/
+see a live preview of the application at http://www.matt-ellis.me/dribbble_viewer/
